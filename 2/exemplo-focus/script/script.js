@@ -14,15 +14,15 @@ const button = document.querySelector(".cadastro__button");
 button.addEventListener("click", function(event){
  event.preventDefault();
 
- const optionSelect = inputArea.options[inputArea.selectedIndex]
- console.log(inputArea.selectedIndex)
+//  const optionSelect = inputArea.options[inputArea.selectedIndex]
+//  console.log(inputArea.selectedIndex)
 
 console.log(inputNews)
 console.log(inputNews.checked)
 console.log(inputNome.value)
 
 
- if(inputNome.value === undefined || inputNome.value === null || inputNome.value === "" || inputNome.value === " "){
+  if(inputNome.value === undefined || inputNome.value === null || inputNome.value === "" || inputNome.value === " "){
     inputNome.focus();
      return false;
   }else if(inputEmail.value === undefined || inputEmail.value === null || inputEmail.value === "" || inputEmail.value === " "){
@@ -42,6 +42,7 @@ console.log(inputNome.value)
      inputPhone.focus();
     return false;
   }
+
   //correspondencia email e senha
   else if (inputEmail.value !== inputEmailConfirm.value){
      inputEmail.focus(); 
@@ -64,14 +65,19 @@ console.log(inputNome.value)
 
 
   }
-    else if(inputNews.value == false){
+    else if(inputNews.value === null){
     alert("É uma pena que você não deseja receber nosso conteúdo exclusivo")
+  }
 
-}
+  //submeter o formulário
+
+    document.querySelector("body").style.backgroundColor = "#fff";
+    const form = this.closest("form");
+    form.submit();
+ })
 
 
-
-
-
-
+inputEmailConfirm.addEventListener("paste", function(event){
+     event.preventDefault();
+     return false
 })
