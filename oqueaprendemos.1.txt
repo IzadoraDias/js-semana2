@@ -1,0 +1,41 @@
+DOM
+getElementById
+querySelector
+//ByName
+//ByClassName
+//ByTagName
+
+addEventListener //click, change, scroll, keydown, keyup, paste
+preventDefault
+creatElement
+creatTextNode
+appendchild //add um elemento "filho" a um elemento
+insertBefore // insere um elemento "filho" antes de um elemento escolhido
+childNodes // retorno todos os nós filhos de um elemento
+children // retorna só as tags html filhas de um elemento
+innerHTML // insere um contéudo de string dentro de um elemento
+value // retorna valores de texto de um elemento que possua um conteúdo de 
+texto, como um input ou textarea
+alert // pop up feioso na sua cara
+console.log // printa no console
+focus // foca a atenção em um elemento
+style // interagir com propriedade css através do js
+setAttribute // modifica/adiciona propriedades html
+submit // submete/envia o formulário
+closest // faz amarração de elementos e traz o amado em menos de 0.3s
+checked // checa se tá checado
+length // acessa o comprimento do elemento acessado 
+selectedIndex //acessa o atributo de data-- "data-pastel"
+src // acessa o atributo de source
+scrollTo // "rrrrolando!!!" o método scrollTo foi utilizado para fazer a janela rolar para o topo 
+hidden // esconde ou mostra - acessa o atributo e permite definição de valor true or false
+pageY0ffset // posição pagina eixo Y -vertical 
+disable // desabilitar ou habilitar - acessa o atributo disable e permite definiçãode valor 
+true or false
+Date // data, horário e fuso horário
+getDate // retorna dia 
+getHours // retorna hora
+toLocaleString // informações pertinente a Data (pt-br)
+remove // remove o elemento
+className // acessa a propriedade de classe de um elemento
+classList // acessa a lista de classe
